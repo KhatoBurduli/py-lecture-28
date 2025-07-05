@@ -38,7 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'poll',
-    'human'
+    'human',
+    'rest_framework',
+    'book'
 ]
 
 MIDDLEWARE = [

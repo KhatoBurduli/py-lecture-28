@@ -12,5 +12,6 @@ urlpatterns = [
     path('',home),
     path('admin/', admin.site.urls),
     path('api/',include('poll.urls')),
-    path('human_list/', human_list, name="human_list")
+    path('human_list/', human_list, name="human_list"),
+    path('book/', include('book.urls'))
 ]
