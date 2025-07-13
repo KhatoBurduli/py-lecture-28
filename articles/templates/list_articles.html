@@ -1,0 +1,16 @@
+{% load static %}
+
+<h1>All Articles</h1>
+
+<img src="{% static 'dog.jpg' %}" alt="">
+
+<ul>
+  {% for article in articles %}
+    <li>
+      {% if article.picture%}
+        <img src="{{ article.picture.url }}" alt="">
+      {% endif %}
+      {{ article.title }}, by {{ article.author }}
+    </li>
+  {% endfor %}
+</ul>
